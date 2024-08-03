@@ -1,9 +1,9 @@
 
 
-tm_custom_module <- function(label){
+tm_custom_module <- function(label, mydata){
   module(
     label=label, 
-    datanames="ELEC",
+    
     ui = function(id){
       ns <- NS(id)
       tagList(
@@ -22,7 +22,7 @@ tm_custom_module <- function(label){
                      
                      dataInput1 <- reactive({
                        
-                       data()[["ELEC"]]
+                       data()[[mydata]]
                        
                        
                      

@@ -18,7 +18,7 @@ data <- teal_data(ELEC=elec)
  app <- init(
    
    data <- data, 
-   modules = tm_custom_module("election data 2020")
+   modules = tm_custom_module(label="election data 2020", mydata="ELEC")
    
   
  )
